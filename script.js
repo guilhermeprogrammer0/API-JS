@@ -6,7 +6,7 @@ function fetchUsers(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response=>response.json())
     .then((data)=>{
-        userList.innerHTML = "";
+        userList.innerHTML = '';
        data.forEach((user)=>{
         const userDiv = document.createElement("div");
         userDiv.classList.add("estiloDiv");
